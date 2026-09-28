@@ -11,8 +11,13 @@ cask "rapidsnap" do
 
   app "RapidSnap.app"
 
-  caveats <<~EOS
-    RapidSnap is not notarized. If macOS blocks the first launch, run:
-      xattr -dr com.apple.quarantine /Applications/RapidSnap.app
-  EOS
+  # RapidSnap is ad-hoc signed but not notarized (no Apple Developer Program
+  # membership), so Gatekeeper would refuse to launch the downloaded bundle.
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args:         ["-dr", "com.apple.quarantine", "#{appdir}/RapidSnap.app"],
+                   must_succeed: false
+  end
+
+  uninstall quit: "io.github.ahmedash95.rapidsnap"
 end
