@@ -1,6 +1,6 @@
 cask "toma" do
-  version "0.1.0"
-  sha256 "f897b288c7a2aadfc5a07ced0030762c7549eca4ef02962f8eca40fa9a063c05"
+  version "0.2.0"
+  sha256 "7aa3b493840cf2533f72369373b0680eef8a1c40290f616608545aabca48f10d"
 
   url "https://github.com/ahmedash95/toma/releases/download/v#{version}/Toma-#{version}.dmg"
   name "Toma"
