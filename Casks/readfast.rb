@@ -1,11 +1,11 @@
 cask "readfast" do
-  version "0.1.0"
-  sha256 "d6fe4d422032621ac84763fcdce0251e517a157ecd5a93b9a359cf2ab6d365eb"
+  version "0.1.1"
+  sha256 "e00395cffad14ab1bc2fe5fc89edb5cd00abe8158c4aa19cd86c66938b274800"
 
-  url "https://github.com/ahmedash95/ReadFast/releases/download/v#{version}/ReadFast-#{version}.dmg"
+  url "https://github.com/ahmedash95/readfast/releases/download/v#{version}/ReadFast-#{version}.dmg"
   name "ReadFast"
   desc "Fast CSV viewer for macOS"
-  homepage "https://github.com/ahmedash95/ReadFast"
+  homepage "https://github.com/ahmedash95/readfast"
 
   depends_on arch: :arm64
   depends_on macos: ">= :golden_gate"
