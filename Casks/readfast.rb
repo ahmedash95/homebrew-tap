@@ -1,6 +1,6 @@
 cask "readfast" do
-  version "0.1.2"
-  sha256 "7577afc7083c38afd7b563b6ed3fdb95ec84d98e1f0f7ba20f7b92907494a8c3"
+  version "0.1.3"
+  sha256 "7cef1e53512d9a42d5963500a02bb022e6f93cce81c77ef5b5b9b623d46077c7"
 
   url "https://github.com/ahmedash95/readfast/releases/download/v#{version}/ReadFast-#{version}.dmg"
   name "ReadFast"
