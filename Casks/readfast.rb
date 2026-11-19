@@ -1,6 +1,6 @@
 cask "readfast" do
-  version "0.1.5"
-  sha256 "7b70afa56e189307bf1ed04765a12c90b6475a0b36b06ca9669cb1a24acd70b2"
+  version "0.1.6"
+  sha256 "c01eca3cf4a8fb43e18f85f2a68f685ab6a399ef452f2c23bcfb2aad487a4f9c"
 
   url "https://github.com/ahmedash95/readfast/releases/download/v#{version}/ReadFast-#{version}.dmg"
   name "ReadFast"
@@ -8,7 +8,7 @@ cask "readfast" do
   homepage "https://github.com/ahmedash95/readfast"
 
   depends_on arch: :arm64
-  depends_on macos: ">= :golden_gate"
+  depends_on macos: ">= :sequoia"
 
   app "ReadFast.app"
 
